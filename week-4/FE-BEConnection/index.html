@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FE - BE Connection</title>
+  </head>
+  <body>
+    <div>
+      <input
+        type="text"
+        oninput="servercall()"
+        id="firstNumber"
+        placeholder="Enter the number"
+      />
+      <input
+        type="text"
+        oninput="servercall()"
+        id="secondNumber"
+        placeholder="Enter the number"
+      />
+      <!-- This oninput calls the servercall func as soon as you type it won't wait for you to enter
+      the input completely -->
+      <!-- This can be avoided this unnecessary calls using the debounce technique -->
+      <button id="btn" onclick="">Sum</button>
+    </div>
+    <div><p id="sum"></p></div>
+  </body>
+  <script src="index.js"></script>
+</html>
